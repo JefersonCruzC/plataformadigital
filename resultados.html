@@ -72,12 +72,12 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="assets/img/trainers/graficoregresion.png" class="img-fluid" alt="">
+              <img src="assets/img/trainers/graficoviolin.png" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>Gráfico de Regresión</h4>
-                <span>Line Plot</span>
+                <h4>Gráfico de violín</h4>
+                <span>Datos recopilados</span>
                 <p>
-                El gráfico de regresión traza una línea que representa la relación estimada entre el bienestar emocional y el rendimiento académico. Muestra si hay una tendencia positiva, negativa o neutral entre estas dos variables. Cuanto más inclinada sea la línea, más fuerte será la relación. Este gráfico es fundamental en un análisis de regresión lineal simple, ya que ayuda a identificar patrones de correlación.</p>
+                En el gráfico se observa la distribución de las respuestas de los estudiantes, en la que nos indica, en el caso del nivel de optimismo una tendencia de normal hacia muy alta, mientras que el nivel de alegría tiene mayor impacto en el normal, por consiguiente, el margen de la satisfacción se observa mayormente desde bajo hasta alto, asimismo, este ultimo resultado tiene semejanza con el nivel de autoestima. Por otro lado, en el caso de las emociones negativas se muestra que el nivel de estrés normal es el más abundante, mientras que este resultado se repite para la ansiedad, no obstante, en el caso del nivel de depresión, este se encuentra en los márgenes de bajo y alto.  Por último, en el caso del rendimiento académico hay una numerosa cantidad que presenta una calificación promedio de notas normal, es decir, dentro del intervalo de 11 y 14. </p>
               </div>
             </div>
           </div>
@@ -87,25 +87,40 @@
               <img src="assets/img/trainers/graficodispersion.png" class="img-fluid" alt="">
               <div class="member-content">
                 <h4>Gráfico de Dispersión</h4>
-                <span>Scatter Plot</span>
+                <span>Influencia positiva y negativa</span>
                 <p>
-                Este gráfico muestra visualmente cómo se distribuyen las calificaciones de los estudiantes en función de su bienestar emocional. Cada punto en el gráfico representa a un estudiante, y su posición en el eje x indica su nivel de bienestar emocional, mientras que la posición en el eje y muestra su rendimiento académico. Los patrones y tendencias en el gráfico pueden ayudar a identificar si existe alguna relación inicial.</p>
+                Como se puede observar en dicho gráfico, las emociones positivas están relacionadas de manera significativa y positiva en cuanto al rendimiento académico, es decir, mientras que tenga una emoción positiva alta, las notas de los promedios ponderados de los estudiantes también se incrementarán, no obstante, aquellas emociones negativas tienen una significancia negativa en cuanto al rendimiento académico, es decir, que al incrementarse estas dimensiones negativas tendrán una disminución en la calificación de los estudiantes, ya que la pendiente se encuentra de manera negativa, caso contrario al de las emociones positivas. </p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="assets/img/trainers/graficoresiduos.png" class="img-fluid" alt="">
+              <img src="assets/img/trainers/matrizcorrelacion.png" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>Gráfico de Residuos</h4>
-                <span>Residual Plot</span>
+                <h4>Matriz de correlación</h4>
+                <span>Influencia significativa positiva y negativa</span>
                 <p>
-                Los residuos son las diferencias entre las calificaciones observadas y las calificaciones predichas por el modelo de regresión. El gráfico de residuos se utiliza para verificar si los residuos están distribuidos aleatoriamente alrededor de cero. En este contexto, es importante asegurarse de que los residuos no muestren patrones sistemáticos, lo que podría indicar un mal ajuste del modelo o la presencia de variables omitidas. Este gráfico es esencial para evaluar la validez del modelo de regresión.</p>
+                En este caso, la matriz nos ayudará a saber de manera más exacta cuales son los valores significativos de cada emoción positiva y negativa, con respecto al rendimiento académico. En el primer caso, el de las emociones positivas, se puede observar que el nivel de satisfacción posee un efecto significativo del 0,60, seguido a este se encuentra el nivel de autoestima con un valor de 0,41, mientras que las dimensiones de optimismo con un 0,25 y alegría con un 0,17 tienen un bajo significativo en el rendimiento académico. Por otro lado, en las emociones negativas encontramos que el nivel de depresión contiene un efecto significativo negativo de 0,42, mientras que los niveles de estrés y ansiedad poseen un valor de -0,37, lo cual indica que al experimentar estas emociones los estudiantes tienden a tener un peor rendimiento académico. </p>
               </div>
             </div>
           </div>
 
+          <div class="col-lg-12" style="margin-top: 40px;">
+            <div class="member text-center">
+              <div class="member-content">
+                <h4 style="font-size: 1.3em; margin-left: 20px; margin-right: 20px; margin-top: 20px;">Resultados Finales</h4>
+                <p style="font-size: 1.1em; text-align: justify; margin-left: 30px; margin-right: 30px;">
+                  - El modelo de regresión lineal simple reveló que las variables relacionadas con emociones positivas y negativas tienen una influencia significativa en el rendimiento académico de los estudiantes. El coeficiente de determinación R² del modelo fue de 0.521, lo que indica que aproximadamente el 52.1% de la variabilidad en el rendimiento académico puede explicarse por estas variables.<br>
+                  - Al analizar los coeficientes de las variables, observamos que las variables "Nivel de satisfacción" (𝛽=0.1729,𝑝< 0.05) y "Nivel de Autoestima" (𝛽=0.0806,𝑝<0.05) muestran una influencia positiva y significativa en el rendimiento académico. Esto sugiere que los estudiantes que reportaron niveles más altos de satisfacción y autoestima tienden a tener un mejor rendimiento académico.<br>
+                  - Por otro lado, las variables "Nivel de estrés" (𝛽=−0.0933, 𝑝<0.05), "Nivel de ansiedad" (𝛽=−0.1155, 𝑝<0.05) y "Nivel de depresión" (𝛽=−0.1003, 𝑝<0.05) muestran una influencia negativa y significativa en el rendimiento académico. Esto indica que los estudiantes que experimentan niveles más altos de estrés, ansiedad y depresión tienden a tener un rendimiento académico más bajo.<br>
+                  - Para mejorar la comprensión de los factores que influyen en el rendimiento académico, podríamos considerar la inclusión de variables adicionales en el análisis, como el nivel socioeconómico de los estudiantes, el apoyo familiar o la participación en actividades extracurriculares. Estas variables pueden proporcionar una visión más completa de los desafíos y recursos que enfrentan los estudiantes, lo que ayudaría a informar políticas y programas diseñados para mejorar su rendimiento académico y bienestar general.
+                </p>
+              </div>
+            </div>
+          </div>
+                  
+  
         </div>
 
       </div>
